@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		222D7DB82538BA74009E58AE /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D7DB72538BA74009E58AE /* DataSource.swift */; };
 		222D7DBB2538C403009E58AE /* EmojiCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D7DBA2538C403009E58AE /* EmojiCollectionViewDelegate.swift */; };
+		222D7DBE2538C910009E58AE /* EmojiHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D7DBD2538C910009E58AE /* EmojiHeaderView.swift */; };
 		222EA26F2537845100F74232 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EA26E2537845100F74232 /* AppDelegate.swift */; };
 		222EA2712537845100F74232 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EA2702537845100F74232 /* SceneDelegate.swift */; };
 		222EA2732537845100F74232 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EA2722537845100F74232 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		222D7DB72538BA74009E58AE /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		222D7DBA2538C403009E58AE /* EmojiCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		222D7DBD2538C910009E58AE /* EmojiHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiHeaderView.swift; sourceTree = "<group>"; };
 		222EA26B2537845100F74232 /* EmojiGridView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiGridView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222EA26E2537845100F74232 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222EA2702537845100F74232 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				222EA28A2537ABF500F74232 /* Emoji.swift */,
 				222D7DB72538BA74009E58AE /* DataSource.swift */,
 				222D7DBA2538C403009E58AE /* EmojiCollectionViewDelegate.swift */,
+				222D7DBD2538C910009E58AE /* EmojiHeaderView.swift */,
 			);
 			path = EmojiGridView;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				222D7DB82538BA74009E58AE /* DataSource.swift in Sources */,
 				222EA28B2537ABF500F74232 /* Emoji.swift in Sources */,
+				222D7DBE2538C910009E58AE /* EmojiHeaderView.swift in Sources */,
 				222EA2732537845100F74232 /* ViewController.swift in Sources */,
 				222EA26F2537845100F74232 /* AppDelegate.swift in Sources */,
 				222EA2852537A8C100F74232 /* EmojiCell.swift in Sources */,

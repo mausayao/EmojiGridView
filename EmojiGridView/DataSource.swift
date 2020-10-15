@@ -33,4 +33,14 @@ class DataSource: NSObject, UICollectionViewDataSource {
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let emojiHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: EmojiHeaderView.reuseIdentifier, for: indexPath) as? EmojiHeaderView else {
+            fatalError("Cannot create the session")
+        }
+        
+        emojiHeader.textLabel.text = emoji.sections[indexPath.section].rawValue
+        
+        return emojiHeader
+    }
 }
