@@ -46,7 +46,7 @@
                                                 <constraint firstItem="tZS-xX-w1E" firstAttribute="centerY" secondItem="7Ct-7c-CO3" secondAttribute="centerY" id="zrT-or-Rqb"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <size key="customSize" width="50" height="50"/>
                                         <connections>
                                             <outlet property="emojiLabel" destination="tZS-xX-w1E" id="5r1-cf-USc"/>
@@ -86,14 +86,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9jL-ff-rB9">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mPe-J5-RXM">
-                            <connections>
-                                <action selector="addEmoji:" destination="BYZ-38-t0r" id="ysO-FX-wHY"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="mPe-J5-RXM">
+                                <connections>
+                                    <action selector="addEmoji:" destination="BYZ-38-t0r" id="ysO-FX-wHY"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem enabled="NO" systemItem="trash" id="vVa-qM-NUF">
+                                <connections>
+                                    <action selector="deleteEmoji:" destination="BYZ-38-t0r" id="guU-Om-UAO"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="mPe-J5-RXM" id="4mX-tA-2y5"/>
                         <outlet property="collectionView" destination="BHU-2A-RSE" id="w7x-EA-lbv"/>
+                        <outlet property="deleteButton" destination="vVa-qM-NUF" id="4uq-cE-DUZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,11 +160,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

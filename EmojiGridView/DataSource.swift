@@ -52,4 +52,18 @@ extension DataSource {
         
         self.emoji.data.updateValue(emojiData, forKey: category)
     }
+    
+    func deleteEmoji(at indexPath: IndexPath) {
+        let category = emoji.sections[indexPath.section]
+        guard var emojiData = emoji.data[category] else { return }
+        emojiData.remove(at: indexPath.item)
+        
+        emoji.data.updateValue(emojiData, forKey: category)
+    }
+    
+    func deleteEmoji(at indexPaths: [IndexPath]) {
+        indexPaths.forEach {
+            deleteEmoji(at: $0)
+        }
+    }
 }
